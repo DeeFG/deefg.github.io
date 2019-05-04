@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Parallax Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+</head>
+
+
+<style>
+  .modal {
+    background: wheat;
+    color: blue;
+  }
+</style>
+
+
+
+
+<body>
+
+  <!-- Modal Trigger -->
+  <button data-target="modal1" class="btn modal-trigger" id="btntrigger">Modal</button>
+
+  <!-- Modal Trigger
+   <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a> -->
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <link rel="stylesheet" href="">
+      <iframe width="545" height="250" src="https://www.youtube.com/embed/ouQHa-o5J-w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat"> NOW YOU! </a>
+    </div>
+  </div>
+
+
+  <!--  Scripts-->
+  <script src="confetti.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script>
+
+    // document.addEventListener('DOMContentLoaded', function() {
+    //   var elems = document.querySelectorAll('.modal');
+    //   var instances = M.Modal.init(elems, options);
+    // });
+    // Or with jQuery
+
+    $(document).ready(function () {
+      $("#btntrigger").on("click", function () {
+        $('.modal').modal();
+   
+
+      });
+      
+
+    });
+
+
+  </script>
+
+</body>
+
+</html>
